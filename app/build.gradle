@@ -71,4 +71,15 @@ dependencies {
 
     // Pull to refresh layout
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    // Mockito
+    testImplementation 'org.mockito:mockito-core:3.7.0'
+    testImplementation "android.arch.core:core-testing:2.1.0"
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2'
+
+    // Espresso
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'com.squareup.okhttp:mockwebserver:2.7.0'
+    androidTestImplementation 'com.android.support.test:rules:0.4'
+
 }

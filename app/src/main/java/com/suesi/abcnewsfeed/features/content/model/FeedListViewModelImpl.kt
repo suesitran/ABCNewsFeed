@@ -6,7 +6,7 @@ import com.suesi.abcnewsfeed.data.FeedDisplayable
 import com.suesi.abcnewsfeed.usecase.RetrieveNewsFeedFromServerUseCase
 import kotlinx.coroutines.launch
 
-class FeedListViewModelImpl(val retrieveNewsFeedFromServerUseCase: RetrieveNewsFeedFromServerUseCase) : FeedListViewModel() {
+class FeedListViewModelImpl(private val retrieveNewsFeedFromServerUseCase: RetrieveNewsFeedFromServerUseCase) : FeedListViewModel() {
 
     private val _isLoading = MutableLiveData<Boolean>()
     override val isLoading: LiveData<Boolean> = _isLoading
