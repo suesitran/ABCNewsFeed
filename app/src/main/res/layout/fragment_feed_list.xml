@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
+
         <import type="android.view.View" />
+
         <variable
             name="viewmodel"
             type="com.suesi.abcnewsfeed.features.content.model.FeedListViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/light_grey">
 
-        <androidx.recyclerview.widget.RecyclerView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/rv_details_list"
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srl_pull_to_refresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_margin="@dimen/medium_padding"
-            android:visibility="@{safeUnbox(viewmodel.isError) ? View.GONE : View.VISIBLE}"/>
+            >
 
+            <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rv_details_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{safeUnbox(viewmodel.isError) ? View.GONE : View.VISIBLE}" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
         <!-- Error view -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/failed_to_load_feeds"
             android:visibility="@{safeUnbox(viewmodel.isError) ? View.VISIBLE : View.GONE}"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

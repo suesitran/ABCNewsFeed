@@ -27,16 +27,12 @@ class FeedListViewModelImpl(val retrieveNewsFeedFromServerUseCase: RetrieveNewsF
 
             when (val retrieveNewsFeedResult = retrieveNewsFeedFromServerUseCase.retrieveNewsFeed()) {
                 is RetrieveNewsFeedFromServerUseCase.Result.Success -> {
-                    android.util.Log.d("--SUESI--","result success" )
                     _feeds.postValue(retrieveNewsFeedResult.items)
                 }
                 is RetrieveNewsFeedFromServerUseCase.Result.Error -> {
-                    android.util.Log.d("--SUESI--","result error" )
                     _isError.postValue(true)
                 }
             }
-
-            android.util.Log.d("--SUESI--", "load news completed")
 
             _isLoading.postValue(false)
         }

@@ -47,6 +47,7 @@ class FeedListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setupObserver()
         setupAdapter()
+        setupPullToRefresh()
 
         // load news
     }
@@ -65,5 +66,15 @@ class FeedListFragment : Fragment() {
                 adapter.updateFeeds(it)
             }
         })
+
+        dataBinding.viewmodel?.isLoading?.observe(viewLifecycleOwner, Observer { isLoading ->
+            dataBinding.srlPullToRefresh.isRefreshing = isLoading ?: false
+        })
+    }
+
+    private fun setupPullToRefresh() {
+        dataBinding.srlPullToRefresh.setOnRefreshListener {
+            dataBinding.viewmodel?.loadNews()
+        }
     }
 }

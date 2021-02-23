@@ -3,6 +3,7 @@ package com.suesi.abcnewsfeed.features.content.model.usecase
 import com.suesi.abcnewsfeed.features.content.model.FeedDisplayable
 import com.suesi.abcnewsfeed.retrofit.NewsClient
 import java.text.SimpleDateFormat
+import java.util.*
 import javax.inject.Inject
 
 class RetrieveNewsFeedFromServerUseCaseImpl(val newsClient: NewsClient) : RetrieveNewsFeedFromServerUseCase {
@@ -30,8 +31,10 @@ class RetrieveNewsFeedFromServerUseCaseImpl(val newsClient: NewsClient) : Retrie
     }
 
     private fun convertToUiDate(serverDate : String) : String {
-        val date = SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(serverDate)
+        val date = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+            .parse(serverDate)
 
-        return SimpleDateFormat("MMM dd, yyyy KK:mm a").format(date)
+        return SimpleDateFormat("MMM dd, yyyy KK:mm a")
+            .format(date)
     }
 }

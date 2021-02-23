@@ -71,4 +71,6 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.3.3"
     implementation "androidx.navigation:navigation-dynamic-features-fragment:2.3.3"
 
+    // Pull to refresh layout
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 }
