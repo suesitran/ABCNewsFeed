@@ -11,5 +11,5 @@ import dagger.Provides
 class RetrieveNewsFeedFromServerUseCaseModule {
     @ActiveRuntime
     @Provides
-    fun provideRetrieveNewsFeedFromServerUseCase(newsClient: NewsClient) : RetrieveNewsFeedFromServerUseCase = RetrieveNewsFeedFromServerUseCaseImpl(newsClient)
+    fun provideRetrieveNewsFeedFromServerUseCase(impl: RetrieveNewsFeedFromServerUseCaseImpl) : RetrieveNewsFeedFromServerUseCase = impl
 }

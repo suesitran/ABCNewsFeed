@@ -6,10 +6,15 @@ import com.suesi.abcnewsfeed.usecase.RetrieveNewsFeedFromServerUseCase
 import com.suesi.abcnewsfeed.usecase.retrievefeedsusecase._di.module.RetrieveNewsFeedFromServerUseCaseModule
 import dagger.Module
 import dagger.Provides
+import javax.inject.Named
 
 @Module(includes = [RetrieveNewsFeedFromServerUseCaseModule::class])
 class FeedDetailModule(private val position : Int) {
     @Provides
-    fun provideViewModel(useCase : RetrieveNewsFeedFromServerUseCase): FeedDetailModel = FeedDetailModelImpl(useCase, position)
+    fun provideViewModel(impl : FeedDetailModelImpl): FeedDetailModel = impl
+
+    @Named("SelectedPosition")
+    @Provides
+    fun provideSelectedPosition() : Int = position
 
 }

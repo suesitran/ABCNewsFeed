@@ -3,8 +3,9 @@ package com.suesi.abcnewsfeed.usecase
 import com.suesi.abcnewsfeed.data.FeedDisplayable
 import com.suesi.abcnewsfeed.retrofit.NewsClient
 import java.text.SimpleDateFormat
+import javax.inject.Inject
 
-class RetrieveNewsFeedFromServerUseCaseImpl(val newsClient: NewsClient) : RetrieveNewsFeedFromServerUseCase {
+class RetrieveNewsFeedFromServerUseCaseImpl @Inject constructor(val newsClient: NewsClient) : RetrieveNewsFeedFromServerUseCase {
 
     override suspend fun retrieveNewsFeed(): RetrieveNewsFeedFromServerUseCase.Result {
         val response = newsClient.loadNews()

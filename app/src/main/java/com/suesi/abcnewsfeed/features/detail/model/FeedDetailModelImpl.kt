@@ -5,12 +5,13 @@ import androidx.lifecycle.MutableLiveData
 import com.suesi.abcnewsfeed.data.FeedDisplayable
 import com.suesi.abcnewsfeed.usecase.RetrieveNewsFeedFromServerUseCase
 import kotlinx.coroutines.launch
-import java.util.*
+import javax.inject.Inject
+import javax.inject.Named
 import kotlin.collections.ArrayList
 
-class FeedDetailModelImpl(
+class FeedDetailModelImpl @Inject constructor(
     private val retrieveNewsFeedFromServerUseCase : RetrieveNewsFeedFromServerUseCase,
-    private val position: Int) : FeedDetailModel() {
+    @Named("SelectedPosition") private val position: Int) : FeedDetailModel() {
 
     private val _feeds = MutableLiveData<List<FeedDisplayable>>()
     override val feeds: LiveData<List<FeedDisplayable>> = _feeds
