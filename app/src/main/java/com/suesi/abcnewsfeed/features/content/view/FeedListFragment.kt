@@ -1,4 +1,4 @@
-package com.suesi.abcnewsfeed.content.view
+package com.suesi.abcnewsfeed.features.content.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.suesi.abcnewsfeed.content.view.adapter.NewsFeedAdapter
 import com.suesi.abcnewsfeed.databinding.FragmentFeedListBinding
+import com.suesi.abcnewsfeed.features.content.view.adapter.NewsFeedAdapter
 
 class FeedListFragment : Fragment() {
     private lateinit var dataBinding: FragmentFeedListBinding
@@ -18,6 +18,7 @@ class FeedListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        android.util.Log.d("SUESI", "started fragment list")
         dataBinding = FragmentFeedListBinding.inflate(inflater, container, false).apply {
             // setup view model
         }

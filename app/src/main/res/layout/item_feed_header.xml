@@ -4,7 +4,7 @@
         <import type="android.view.View" />
         <variable
             name="feed"
-            type="com.suesi.abcnewsfeed.content.model.FeedDisplayable" />
+            type="com.suesi.abcnewsfeed.features.content.model.FeedDisplayable" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

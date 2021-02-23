@@ -1,8 +1,8 @@
-package com.suesi.abcnewsfeed.content.view.adapter
+package com.suesi.abcnewsfeed.features.content.view.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.suesi.abcnewsfeed.content.view.viewholder.NewsFeedViewHolder
+import com.suesi.abcnewsfeed.features.content.view.viewholder.NewsFeedViewHolder
 
 class NewsFeedAdapter : RecyclerView.Adapter<NewsFeedViewHolder>() {
     override fun getItemCount(): Int = 0

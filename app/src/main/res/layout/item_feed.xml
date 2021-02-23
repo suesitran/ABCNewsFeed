@@ -4,7 +4,7 @@
         <import type="android.view.View" />
         <variable
             name="feed"
-            type="com.suesi.abcnewsfeed.content.model.FeedDisplayable" />
+            type="com.suesi.abcnewsfeed.features.content.model.FeedDisplayable" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +17,7 @@
             android:id="@+id/iv_thumbnail"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="tv_date"
+            app:layout_constraintBottom_toBottomOf="@id/tv_date"
             tools:src="@mipmap/ic_launcher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

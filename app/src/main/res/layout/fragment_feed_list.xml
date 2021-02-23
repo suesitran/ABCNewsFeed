@@ -4,7 +4,7 @@
         <import type="android.view.View" />
         <variable
             name="viewmodel"
-            type="com.suesi.abcnewsfeed.content.model.FeedListViewModel" />
+            type="com.suesi.abcnewsfeed.features.content.model.FeedListViewModel" />
     </data>
 
     <androidx.recyclerview.widget.RecyclerView

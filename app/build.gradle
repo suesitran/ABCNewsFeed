@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.suesi.abcnewsfeed"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -34,6 +34,9 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -54,5 +57,13 @@ dependencies {
 
     // Recycler view
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    // Picasso
+    implementation "com.squareup.picasso:picasso:2.8"
+
+    // Navigation component
+    implementation "android.arch.navigation:navigation-fragment:2.3.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.3"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:2.3.3"
 
 }

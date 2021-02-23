@@ -1,14 +1,12 @@
-package com.suesi.abcnewsfeed.content.view.viewholder
+package com.suesi.abcnewsfeed.features.content.view.viewholder
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.suesi.abcnewsfeed.R
-import com.suesi.abcnewsfeed.content.model.FeedDisplayable
+import com.suesi.abcnewsfeed.features.content.model.FeedDisplayable
 import com.suesi.abcnewsfeed.databinding.ItemFeedBinding
 import com.suesi.abcnewsfeed.databinding.ItemFeedHeaderBinding
-import com.suesi.abcnewsfeed.retrofit.response.FeedResponse
 
 abstract class NewsFeedViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     abstract fun bind(feed: FeedDisplayable)
