@@ -13,10 +13,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-private const val BASE_URL = "https://api.rss2json.com"
 private const val REQUEST_TIMEOUT_DURATION = 30L
 
-class NewsClientImpl(private val context : Context) : NewsClient {
+class NewsClientImpl(private val context : Context,  private val baseUrl : String) : NewsClient {
 
     private val apiService : NewsService
 
@@ -27,7 +26,7 @@ class NewsClientImpl(private val context : Context) : NewsClient {
             .create()
 
         apiService = Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(createRequestInterceptorClient())
             .build()

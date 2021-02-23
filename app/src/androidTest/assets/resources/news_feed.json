@@ -1,0 +1,162 @@
+{
+	"status": "ok",
+	"feed": {
+		"url": "http://www.abc.net.au/news/feed/51120/rss.xml",
+		"title": "Just In",
+		"link": "http://www.abc.net.au/news/justin/",
+		"author": "",
+		"description": "",
+		"image": "http://www.abc.net.au/news/image/8413416-1x1-144x144.png"
+	},
+	"items": [{
+		"title": "Former NSW Labor official admits to exploiting vulnerable children, pleads guilty to dozens of offences",
+		"pubDate": "2021-02-23 02:53:40",
+		"link": "http://www.abc.net.au/news/2021-02-23/sentencing-for-former-nsw-labor-official-peter-hansen-child-sex/13183254",
+		"guid": "http://www.abc.net.au/news/2021-02-23/sentencing-for-former-nsw-labor-official-peter-hansen-child-sex/13183254",
+		"author": "Jamie McKinnell",
+		"thumbnail": "http://www.abc.net.au/news/image/10870604-4x3-140x105.jpg",
+		"description": "<p>Peter Hansen, a former NSW Labor Party branch secretary and Catholic priest in Melbourne, pleads guilty to more than 30 offences including sex with children in Asian countries.</p>",
+		"content": "<p>Peter Hansen, a former NSW Labor Party branch secretary and Catholic priest in Melbourne, pleads guilty to more than 30 offences including sex with children in Asian countries.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/10870604-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/10870604-4x3-140x105.jpg"
+		},
+		"categories": ["Courts and Trials", "Law, Crime and Justice", "Police", "Police Sieges", "Crime", "Sexual Offences"]
+	}, {
+		"title": "Coroner examining Danny Frawley's death urges AFL players to donate brains to science",
+		"pubDate": "2021-02-23 02:21:37",
+		"link": "http://www.abc.net.au/news/2021-02-23/victoria-coroner-recommendations-danny-frawley-afl/13182748",
+		"guid": "http://www.abc.net.au/news/2021-02-23/victoria-coroner-recommendations-danny-frawley-afl/13182748",
+		"author": "",
+		"thumbnail": "http://www.abc.net.au/news/image/11493968-4x3-140x105.jpg",
+		"description": "<p>It is impossible to tell how much the brain disease CTE contributed to the death of AFL legend Danny Frawley, a Victorian coroner says, as she calls for more research into the condition.</p>",
+		"content": "<p>It is impossible to tell how much the brain disease CTE contributed to the death of AFL legend Danny Frawley, a Victorian coroner says, as she calls for more research into the condition.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/11493968-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/11493968-4x3-140x105.jpg"
+		},
+		"categories": ["Health", "Sport", "Brain and Nervous System", "Diseases and Disorders", "Mental Health", "Science", "Australian Football League", "Medical Research"]
+	}, {
+		"title": "Amin says tap water burns his skin, so he's been given a bucket for rain",
+		"pubDate": "2021-02-23 02:08:51",
+		"link": "http://www.abc.net.au/news/2021-02-23/asylum-seeker-with-psoriasis-has-washed-in-weeks-tap-water-burns/13180610",
+		"guid": "http://www.abc.net.au/news/2021-02-23/asylum-seeker-with-psoriasis-has-washed-in-weeks-tap-water-burns/13180610",
+		"author": "Sowaibah Hanifie And Edwina Seselja",
+		"thumbnail": "http://www.abc.net.au/news/image/13181130-4x3-140x105.jpg",
+		"description": "<p>A medevac asylum seeker detained in Brisbane's Immigration Transit Accommodation is using a bucket to collect his own rainwater, after a dispute with medical experts over whether it could improve his skin condition.</p>",
+		"content": "<p>A medevac asylum seeker detained in Brisbane's Immigration Transit Accommodation is using a bucket to collect his own rainwater, after a dispute with medical experts over whether it could improve his skin condition.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/13181130-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/13181130-4x3-140x105.jpg"
+		},
+		"categories": ["Refugees", "Law, Crime and Justice", "Human Interest"]
+	}, {
+		"title": "Alleged Brisbane sex slave ring operator charged with 13 new offences",
+		"pubDate": "2021-02-23 01:47:45",
+		"link": "http://www.abc.net.au/news/2021-02-23/qld-more-charges-laid-unlawful-prostitution-sexual-servitude/13183100",
+		"guid": "http://www.abc.net.au/news/2021-02-23/qld-more-charges-laid-unlawful-prostitution-sexual-servitude/13183100",
+		"author": "Lily Nothling",
+		"thumbnail": "http://www.abc.net.au/news/image/13126338-4x3-140x105.jpg",
+		"description": "<p>More charges are laid against Matthew James Markcrow who is accused of operating a sexual slavery ring where it is alleged women as young as 17 were drugged and held for prostitution in Brisbane, Queensland police say.</p>",
+		"content": "<p>More charges are laid against Matthew James Markcrow who is accused of operating a sexual slavery ring where it is alleged women as young as 17 were drugged and held for prostitution in Brisbane, Queensland police say.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/13126338-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/13126338-4x3-140x105.jpg"
+		},
+		"categories": ["Law, Crime and Justice", "Crime", "Sexual Offences", "Community and Society", "Domestic Violence"]
+	}, {
+		"title": "Mother whose 11yo son died in Texas freeze sues electricity companies for $126 million",
+		"pubDate": "2021-02-23 01:35:07",
+		"link": "http://www.abc.net.au/news/2021-02-23/mother-whose-11yo-son-died-in-texas-freeze-sues-for-24100m/13182948",
+		"guid": "http://www.abc.net.au/news/2021-02-23/mother-whose-11yo-son-died-in-texas-freeze-sues-for-24100m/13182948",
+		"author": "",
+		"thumbnail": "http://www.abc.net.au/news/image/13183124-4x3-140x105.jpg",
+		"description": "<p>The mother of an 11-year-old boy who died after they lost electricity and heat in their Texas mobile home during last week's freeze files a $US100 million lawsuit against two power companies for gross negligence.</p>",
+		"content": "<p>The mother of an 11-year-old boy who died after they lost electricity and heat in their Texas mobile home during last week's freeze files a $US100 million lawsuit against two power companies for gross negligence.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/13183124-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/13183124-4x3-140x105.jpg"
+		},
+		"categories": ["Weather", "Community and Society", "Electricity Energy and Utilities", "Death and Dying", "Law, Crime and Justice", "Government and Politics"]
+	}, {
+		"title": "Woody Allen labels new documentary on alleged abuse a 'hatchet job'",
+		"pubDate": "2021-02-23 01:21:31",
+		"link": "http://www.abc.net.au/news/2021-02-23/allen-v-farrow-documentary-is-a-hatchet-job,-woody-allen-says/13182900",
+		"guid": "http://www.abc.net.au/news/2021-02-23/allen-v-farrow-documentary-is-a-hatchet-job,-woody-allen-says/13182900",
+		"author": "",
+		"thumbnail": "http://www.abc.net.au/news/image/10255910-4x3-140x105.jpg",
+		"description": "<p>The director and his wife Soon-Yi Previn attack a new HBO documentary that re-examines a decades-old allegation that the Oscar-winning filmmaker molested his adopted daughter.</p>",
+		"content": "<p>The director and his wife Soon-Yi Previn attack a new HBO documentary that re-examines a decades-old allegation that the Oscar-winning filmmaker molested his adopted daughter.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/10255910-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/10255910-4x3-140x105.jpg"
+		},
+		"categories": ["Arts and Entertainment", "Television", "Child Abuse", "Crime"]
+	}, {
+		"title": "Ellyse Perry returns from injury to headline Australia squad",
+		"pubDate": "2021-02-23 01:06:21",
+		"link": "http://www.abc.net.au/news/2021-02-23/ellyse-perry-returns-australia-tour-of-new-zealand/13182882",
+		"guid": "http://www.abc.net.au/news/2021-02-23/ellyse-perry-returns-australia-tour-of-new-zealand/13182882",
+		"author": "",
+		"thumbnail": "http://www.abc.net.au/news/image/12031984-4x3-140x105.jpg",
+		"description": "<p>Australia has named its 17-player limited-overs squad to tour New Zealand, with Ellyse Perry and Tayla Vlaeminck returning from long-term injuries.</p>",
+		"content": "<p>Australia has named its 17-player limited-overs squad to tour New Zealand, with Ellyse Perry and Tayla Vlaeminck returning from long-term injuries.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/12031984-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/12031984-4x3-140x105.jpg"
+		},
+		"categories": ["Sport", "Cricket"]
+	}, {
+		"title": "Anzac Day events to go ahead in Queensland as Chief Health Officer hopes life can 'return to normal'",
+		"pubDate": "2021-02-23 01:02:22",
+		"link": "http://www.abc.net.au/news/2021-02-23/queensland-anzac-day-parade-no-coronavirus-restrictions/13182072",
+		"guid": "http://www.abc.net.au/news/2021-02-23/queensland-anzac-day-parade-no-coronavirus-restrictions/13182072",
+		"author": "Ashleigh Stevenson",
+		"thumbnail": "http://www.abc.net.au/news/image/8469318-4x3-140x105.jpg",
+		"description": "<p>Queensland authorities are working to \"quite rapidly\" return to a normal way of life from COVID-19 restrictions, with the Premier announcing ANZAC Day events could go ahead \"as normal\".</p>",
+		"content": "<p>Queensland authorities are working to \"quite rapidly\" return to a normal way of life from COVID-19 restrictions, with the Premier announcing ANZAC Day events could go ahead \"as normal\".</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/8469318-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/8469318-4x3-140x105.jpg"
+		},
+		"categories": ["ANZAC Day", "Event"]
+	}, {
+		"title": "From 'screaming faddist' to Ogilvie's Scar, Mount Wellington has a long history of grand ideas",
+		"pubDate": "2021-02-23 00:44:18",
+		"link": "http://www.abc.net.au/news/2021-02-23/mount-wellington-cable-car-100-years-of-ideas/13177754",
+		"guid": "http://www.abc.net.au/news/2021-02-23/mount-wellington-cable-car-100-years-of-ideas/13177754",
+		"author": "Rachel Edwards",
+		"thumbnail": "http://www.abc.net.au/news/image/12805714-4x3-140x105.jpg",
+		"description": "<p>They've spoken about a cable car for Hobart's Mount Wellington for the past 130 years, so it's not surprising that the latest plan for a \"machine on wires\" has hit another hurdle.</p>",
+		"content": "<p>They've spoken about a cable car for Hobart's Mount Wellington for the past 130 years, so it's not surprising that the latest plan for a \"machine on wires\" has hit another hurdle.</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/12805714-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/12805714-4x3-140x105.jpg"
+		},
+		"categories": ["Tourism", "Travel and Tourism", "History"]
+	}, {
+		"title": "Craig Kelly quits Liberal Party to sit on the crossbench, leaves government with one-seat majority",
+		"pubDate": "2021-02-23 00:36:25",
+		"link": "http://www.abc.net.au/news/2021-02-23/craig-kelly-quits-liberal-party/13182994",
+		"guid": "http://www.abc.net.au/news/2021-02-23/craig-kelly-quits-liberal-party/13182994",
+		"author": "Georgia Hitch",
+		"thumbnail": "http://www.abc.net.au/news/image/13183048-4x3-140x105.jpg",
+		"description": "<p>The controversial backbencher, criticised for spreading coronavirus misinformation on Facebook, says he decided to become an independent so he can act and speak according to his \"conscience and beliefs\".</p>",
+		"content": "<p>The controversial backbencher, criticised for spreading coronavirus misinformation on Facebook, says he decided to become an independent so he can act and speak according to his \"conscience and beliefs\".</p>",
+		"enclosure": {
+			"link": "http://www.abc.net.au/news/image/13183048-16x9-2150x1210.jpg",
+			"type": "image/jpeg",
+			"thumbnail": "http://www.abc.net.au/news/image/13183048-4x3-140x105.jpg"
+		},
+		"categories": ["Government and Politics", "Liberals"]
+	}]
+}

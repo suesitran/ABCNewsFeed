@@ -8,8 +8,8 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class ApplicationModule(private val context : Context) {
+class ApplicationModule(private val context : Context, private val baseUrl : String) {
     @Provides
     @Singleton
-    fun provideNewsClient() : NewsClient = NewsClientImpl(context)
+    fun provideNewsClient() : NewsClient = NewsClientImpl(context, baseUrl)
 }

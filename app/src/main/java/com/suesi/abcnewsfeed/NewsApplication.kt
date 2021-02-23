@@ -5,7 +5,8 @@ import com.suesi.abcnewsfeed._di.component.ApplicationComponent
 import com.suesi.abcnewsfeed._di.component.DaggerApplicationComponent
 import com.suesi.abcnewsfeed._di.module.ApplicationModule
 
-class NewsApplication : Application() {
+const val BASE_URL = "https://api.rss2json.com"
+open class NewsApplication : Application() {
     lateinit var component: ApplicationComponent
 
     override fun onCreate() {
@@ -13,7 +14,9 @@ class NewsApplication : Application() {
 
         component = DaggerApplicationComponent
             .builder()
-            .applicationModule(ApplicationModule(this))
+            .applicationModule(ApplicationModule(this, getBaseUrl()))
             .build()
     }
+
+    open fun getBaseUrl(): String = BASE_URL
 }
