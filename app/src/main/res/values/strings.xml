@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ABC News Feed</string>
+    <string name="failed_to_load_feeds">Failed to load feed from server. Please try again later.</string>
 </resources>

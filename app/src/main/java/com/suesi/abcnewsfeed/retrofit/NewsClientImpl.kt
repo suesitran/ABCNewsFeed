@@ -15,17 +15,22 @@ private const val BASE_URL = "https://api.rss2json.com"
 private const val REQUEST_TIMEOUT_DURATION = 30L
 
 class NewsClientImpl : NewsClient {
-    private val apiService = Retrofit.Builder().apply {
+
+    private val apiService : NewsService
+
+    init {
         val gson = GsonBuilder()
             .enableComplexMapKeySerialization()
             .setPrettyPrinting()
             .create()
 
-        baseUrl(BASE_URL)
-        addConverterFactory(GsonConverterFactory.create(gson))
-        client(createRequestInterceptorClient())
-    }.build().create(NewsService::class.java)
-
+        apiService = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .client(createRequestInterceptorClient())
+            .build()
+            .create(NewsService::class.java)
+    }
 
     private fun createRequestInterceptorClient(): OkHttpClient {
         val interceptor = Interceptor { chain ->
@@ -43,7 +48,7 @@ class NewsClientImpl : NewsClient {
             .build()
     }
 
-    override suspend fun loadNews(rssUrl: String): Response<RssFeedsResponse> = withContext(Dispatchers.IO) {
+    override suspend fun loadNews(): Response<RssFeedsResponse> = withContext(Dispatchers.IO) {
         return@withContext apiService.loadNews("http://www.abc.net.au/news/feed/51120/rss.xml").execute()
     }
 }

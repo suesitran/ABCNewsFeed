@@ -12,7 +12,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:layout_marginBottom="@dimen/medium_padding">
 
         <ImageView
             android:id="@+id/iv_thumbnail"
@@ -26,7 +27,7 @@
 
         <TextView
             android:id="@+id/tv_title"
-            style="@style/TextAppearance.AppCompat.Display3"
+            style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/medium_padding"
