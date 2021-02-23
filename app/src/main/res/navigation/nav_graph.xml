@@ -8,6 +8,13 @@
     <fragment
         android:id="@+id/feedListFragment"
         android:name="com.suesi.abcnewsfeed.features.content.view.FeedListFragment"
-        android:label="FeedListFragment" >
+        android:label="FeedListFragment">
+        <action
+            android:id="@+id/action_feedListFragment_to_feedDetailFragment"
+            app:destination="@id/feedDetailFragment"/>
     </fragment>
+    <fragment
+        android:id="@+id/feedDetailFragment"
+        android:name="com.suesi.abcnewsfeed.features.detail.view.FeedDetailFragment"
+        android:label="FeedDetailFragment"></fragment>
 </navigation>

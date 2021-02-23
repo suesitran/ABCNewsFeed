@@ -1,10 +1,8 @@
-package com.suesi.abcnewsfeed.features.content.model.usecase
+package com.suesi.abcnewsfeed.usecase
 
-import com.suesi.abcnewsfeed.features.content.model.FeedDisplayable
+import com.suesi.abcnewsfeed.data.FeedDisplayable
 import com.suesi.abcnewsfeed.retrofit.NewsClient
 import java.text.SimpleDateFormat
-import java.util.*
-import javax.inject.Inject
 
 class RetrieveNewsFeedFromServerUseCaseImpl(val newsClient: NewsClient) : RetrieveNewsFeedFromServerUseCase {
 
@@ -20,7 +18,8 @@ class RetrieveNewsFeedFromServerUseCaseImpl(val newsClient: NewsClient) : Retrie
                         item.thumbnail,
                         item.enclosure.link,
                         // convert to UI displayable date
-                        convertToUiDate(item.pubDate)
+                        convertToUiDate(item.pubDate),
+                        item.content
                     )
                 }
                 RetrieveNewsFeedFromServerUseCase.Result.Success(list)

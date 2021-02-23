@@ -1,6 +1,6 @@
-package com.suesi.abcnewsfeed.features.content.model.usecase
+package com.suesi.abcnewsfeed.usecase
 
-import com.suesi.abcnewsfeed.features.content.model.FeedDisplayable
+import com.suesi.abcnewsfeed.data.FeedDisplayable
 
 interface RetrieveNewsFeedFromServerUseCase {
     suspend fun retrieveNewsFeed() : Result

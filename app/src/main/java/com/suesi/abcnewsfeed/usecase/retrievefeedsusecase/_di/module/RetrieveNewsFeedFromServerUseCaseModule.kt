@@ -1,8 +1,8 @@
-package com.suesi.abcnewsfeed.features.content.model.usecase.retrievefeedsusecase._di.module
+package com.suesi.abcnewsfeed.usecase.retrievefeedsusecase._di.module
 
 import com.suesi.abcnewsfeed.ActiveRuntime
-import com.suesi.abcnewsfeed.features.content.model.usecase.RetrieveNewsFeedFromServerUseCase
-import com.suesi.abcnewsfeed.features.content.model.usecase.RetrieveNewsFeedFromServerUseCaseImpl
+import com.suesi.abcnewsfeed.usecase.RetrieveNewsFeedFromServerUseCase
+import com.suesi.abcnewsfeed.usecase.RetrieveNewsFeedFromServerUseCaseImpl
 import com.suesi.abcnewsfeed.retrofit.NewsClient
 import dagger.Module
 import dagger.Provides

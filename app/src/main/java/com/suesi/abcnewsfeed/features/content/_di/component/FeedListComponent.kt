@@ -3,7 +3,6 @@ package com.suesi.abcnewsfeed.features.content._di.component
 import com.suesi.abcnewsfeed.ActiveRuntime
 import com.suesi.abcnewsfeed._di.component.ApplicationComponent
 import com.suesi.abcnewsfeed.features.content._di.module.FeedListModule
-import com.suesi.abcnewsfeed.features.content.model.usecase.RetrieveNewsFeedFromServerUseCase
 import com.suesi.abcnewsfeed.features.content.view.FeedListFragment
 import dagger.Component
 

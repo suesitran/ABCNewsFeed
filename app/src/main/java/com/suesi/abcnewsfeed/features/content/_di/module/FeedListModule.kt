@@ -2,8 +2,8 @@ package com.suesi.abcnewsfeed.features.content._di.module
 
 import com.suesi.abcnewsfeed.features.content.model.FeedListViewModel
 import com.suesi.abcnewsfeed.features.content.model.FeedListViewModelImpl
-import com.suesi.abcnewsfeed.features.content.model.usecase.RetrieveNewsFeedFromServerUseCase
-import com.suesi.abcnewsfeed.features.content.model.usecase.retrievefeedsusecase._di.module.RetrieveNewsFeedFromServerUseCaseModule
+import com.suesi.abcnewsfeed.usecase.RetrieveNewsFeedFromServerUseCase
+import com.suesi.abcnewsfeed.usecase.retrievefeedsusecase._di.module.RetrieveNewsFeedFromServerUseCaseModule
 import dagger.Module
 import dagger.Provides
 
