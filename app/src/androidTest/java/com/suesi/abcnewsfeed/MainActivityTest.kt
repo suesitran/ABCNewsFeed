@@ -7,13 +7,13 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule
 import com.squareup.okhttp.mockwebserver.MockWebServer
+import kotlinx.coroutines.android.awaitFrame
+import kotlinx.coroutines.runBlocking
 import org.hamcrest.CoreMatchers.not
 import org.junit.After
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import java.util.concurrent.TimeUnit
 
 class MainActivityTest {
     @JvmField
@@ -42,9 +42,14 @@ class MainActivityTest {
         activityTestRule.launchActivity(null)
 
         // then
-        onView(withId(R.id.rv_details_list)).check(matches(isDisplayed()))
-        onView(withText("Failed to load feed from server. Please try again later."))
-            .check(matches(not(isDisplayed())))
+        runBlocking {
+            // wait for frame update
+            awaitFrame()
+
+            onView(withId(R.id.rv_details_list)).check(matches(isDisplayed()))
+            onView(withText("Failed to load feed from server. Please try again later."))
+                .check(matches(not(isDisplayed())))
+        }
     }
 
     @Test
@@ -56,9 +61,14 @@ class MainActivityTest {
         activityTestRule.launchActivity(null)
 
         // then
-        onView(withId(R.id.srl_pull_to_refresh)).check(matches(isDisplayed()))
-        onView(withText("Failed to load feed from server. Please try again later."))
-            .check(matches(not(isDisplayed())))
+        runBlocking {
+            // wait for frame update
+            awaitFrame()
+
+            onView(withId(R.id.srl_pull_to_refresh)).check(matches(not(isDisplayed())))
+            onView(withText("Failed to load feed from server. Please try again later."))
+                .check(matches(isDisplayed()))
+        }
     }
 
     @Test
@@ -69,16 +79,21 @@ class MainActivityTest {
         // when
         activityTestRule.launchActivity(null)
 
-        // click on first row content
-        onView(RecyclerViewMatcher.recyclerViewWithId(R.id.rv_details_list).itemViewAtIndex(0))
-            .perform(click())
+        runBlocking {
+            // wait for frame update before performing UI interaction
+            awaitFrame()
 
-        // then
-        // title is selected title - display in full
-        onView(RecyclerViewMatcher.recyclerViewWithId(R.id.rv_details_list).viewHolderViewAtPosition(0, R.id.tv_title))
-            .check(matches(withText("Former NSW Labor official admits to exploiting vulnerable children, pleads guilty to dozens of offences")))
-        // content is selected content
-        onView(RecyclerViewMatcher.recyclerViewWithId(R.id.rv_details_list).viewHolderViewAtPosition(0, R.id.tv_content))
-            .check(matches(withText(Html.fromHtml("<p>Peter Hansen, a former NSW Labor Party branch secretary and Catholic priest in Melbourne, pleads guilty to more than 30 offences including sex with children in Asian countries.</p>").toString())))
+            // click on second row content
+            onView(RecyclerViewMatcher.recyclerViewWithId(R.id.rv_details_list).itemViewAtIndex(1))
+                .perform(click())
+
+            // then
+            // title is selected title - display in full
+            onView(RecyclerViewMatcher.recyclerViewWithId(R.id.rv_details_list).viewHolderViewAtPosition(0, R.id.tv_title))
+                .check(matches(withText("Coroner examining Danny Frawley's death urges AFL players to donate brains to science")))
+            // content is selected content
+            onView(RecyclerViewMatcher.recyclerViewWithId(R.id.rv_details_list).viewHolderViewAtPosition(0, R.id.tv_content))
+                .check(matches(withText(Html.fromHtml("<p>It is impossible to tell how much the brain disease CTE contributed to the death of AFL legend Danny Frawley, a Victorian coroner says, as she calls for more research into the condition.</p>").toString())))
+        }
     }
 }
