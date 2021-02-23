@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.NetworkPolicy
 import com.squareup.picasso.Picasso
+import com.suesi.abcnewsfeed.R
 import com.suesi.abcnewsfeed.features.content.model.FeedDisplayable
 import com.suesi.abcnewsfeed.databinding.ItemFeedBinding
 import com.suesi.abcnewsfeed.databinding.ItemFeedHeaderBinding
@@ -21,6 +22,7 @@ class HeaderFeedViewHolder(parent : ViewGroup, private val dataBinding : ItemFee
         // bind data - image is from items/enclosure/link
         Picasso.get()
             .load(feed.enclosureLink)
+            .error(R.drawable.ic_image_error)
             .into(dataBinding.ivThumbnail)
 
     }
@@ -33,6 +35,7 @@ class ItemFeedViewHolder(parent: ViewGroup, private val dataBinding: ItemFeedBin
         // bind data - image is from items/thumbnail
         Picasso.get()
             .load(feed.thumbnail)
+            .error(R.drawable.ic_image_error)
             .into(dataBinding.ivThumbnail)
     }
 }
