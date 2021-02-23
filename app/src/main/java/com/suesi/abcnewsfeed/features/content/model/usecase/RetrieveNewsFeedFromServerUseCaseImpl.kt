@@ -32,6 +32,6 @@ class RetrieveNewsFeedFromServerUseCaseImpl(val newsClient: NewsClient) : Retrie
     private fun convertToUiDate(serverDate : String) : String {
         val date = SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(serverDate)
 
-        return SimpleDateFormat("MMM dd, yyyy HH:mm a").format(date)
+        return SimpleDateFormat("MMM dd, yyyy KK:mm a").format(date)
     }
 }
