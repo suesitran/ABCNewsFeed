@@ -24,6 +24,7 @@ class FeedListViewModelImpl(val retrieveNewsFeedFromServerUseCase: RetrieveNewsF
     override fun loadNews() {
         launch {
             _isLoading.postValue(true)
+            _isError.postValue(false)
 
             when (val retrieveNewsFeedResult = retrieveNewsFeedFromServerUseCase.retrieveNewsFeed()) {
                 is RetrieveNewsFeedFromServerUseCase.Result.Success -> {
